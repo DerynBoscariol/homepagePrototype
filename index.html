@@ -7,14 +7,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
-        <script src='https://unpkg.com/panzoom@9.4.0/dist/panzoom.min.js'></script>
     </head>
     <body>
+        <img id="inspo" src="Homepage.png">
+        <header id="header">
+            <div id="topBar">
+                <input type="text" id="searchbar" placeholder="Search for...">
+                <button id="notif" type="button">N</button>
+            </div>
+        </header>
         <div id="map-container">
             <img id="map" src="test-map.jpg">
         </div>
         <div id="dragdiv">
-            <div id="dragdivPull"><p>Drag Me</p></div>
+            
+            <div id="dragdivPull">
+                <div id="grabber"></div>
+                <p>Discover</p>
+            </div>
             <h2>Things To Do</h2>
         </div>
     </body>
