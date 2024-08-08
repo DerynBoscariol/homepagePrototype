@@ -1,3 +1,4 @@
+window.onload = function(){
 // Make the DIV element draggable:
 var section = document.getElementById("dragdiv");
 var pull = document.getElementById("dragdivPull");
@@ -36,4 +37,5 @@ function dragElement(element) {
     document.onmouseup = null;
     document.onmousemove = null;
   }
+}
 }

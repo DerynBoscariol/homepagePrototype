@@ -4,14 +4,14 @@ body {
 }
 
 
-#pullup-sect {
+#dragdiv {
     width:100%;
     background-color: bisque;
     height: 700px;
     position: absolute;
 }
 
-#drag-point {
+#dragdivPull {
     border: 1px solid black;
 }
 
