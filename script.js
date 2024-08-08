@@ -2,7 +2,14 @@ window.onload = function(){
 // Make the DIV element draggable:
 var section = document.getElementById("dragdiv");
 var pull = document.getElementById("dragdivPull");
-dragElement(section);
+console.log(section); // Should log the element or null if not found
+console.log(pull);    // Should log the element or null if not found
+
+  if (section && pull) {
+    dragElement(section);
+  } else {
+    console.error("Element not found!");
+  }
 
 function dragElement(element) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
