@@ -81,8 +81,9 @@ input[type="text" i] {
 }
 
 #dragdivPull {
-    height: 75px;
+    height: fit-content;
     padding: 10px;
+    padding-bottom: 1px;
     cursor: move;
     z-index: 10;
     background-color: #EAF4FB;
@@ -90,6 +91,10 @@ input[type="text" i] {
     font-size: 24px;
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
+}
+h1 {
+    font-size: 24px;
+    margin-top: 17px;
 }
 
 #grabber {
@@ -103,6 +108,7 @@ input[type="text" i] {
 
 #NearYou {
     margin:20px;
+    margin-top: 0;
 }
 
 #NearYou h2 {
@@ -114,6 +120,7 @@ input[type="text" i] {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap:14px;
 }
 
 .card {
@@ -125,23 +132,41 @@ input[type="text" i] {
 
 .card-info {
     padding-left: 14px;
+    display: flex;
+    flex-direction: row;
+}
+.card-img {
+    width: 129px;
+    height: 122px;
+    border-radius: 6.5px;
+    margin-top: 16px;
+    margin-right: 6px;
 }
 
 .card h4 {
     font-size: 16px;
     color:#155788;
+    margin: 11px 0 8px 0;
 }
 
 .card .description {
     font-size: 16px;
+    margin: 8px 0 8px 0;
 }
 
 .date, .location {
     font-size: 14px;
     color: #8A8A8A;
 }
+.date {
+    margin-bottom: 0;
+}
 
-.more-link a {
+.location {
+    margin-top: 0;
+}
+
+.more-link {
     font-size: 16px;
     color: #155788;
 }
