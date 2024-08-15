@@ -3,124 +3,171 @@
     <head>
         <meta charset="utf-8">
         <title>GoLocal</title>
-        <meta name="viewport" content="width=390px">
+        <meta name="viewport" content="width=390">
         <link rel="stylesheet" href="style.css">
         <script src="script.js"></script>
     </head>
     <body>
-        <img id="inspo" src="Homepage.png">
         <header id="header">
             <div id="topBar">
                 <input type="text" id="searchbar" placeholder="Search for...">
-                <button id="notif" type="button"><img src="notifications.png"></button>
+                <button id="notif" type="button"><img src="img/notifications.png"></button>
             </div>
         </header>
         <div id="menu">
             <nav>
-                <div id="home">
-
+                <div class="menu-item" id="home">
+                    <img class="menu-icon" src="img/home.png">
+                    <p class="icon-text">Home</p>
                 </div>
-                <div id=""></div>
+                <div class="menu-item" id="events">
+                    <img class="menu-icon" src="img/calendar_month.png">
+                    <p class="icon-text">Events</p>
+                </div>
+                <div class="menu-item" id="areas">
+                    <img class="menu-icon" src="img/map_icon.png">
+                    <p class="icon-text">Areas</p>
+                </div>
+                <div class="menu-item" id="wishlist">
+                    <img class="menu-icon" src="img/favorite.png">
+                    <p class="icon-text">Wishlist</p>
+                </div>
+                <div class="menu-item" id="more">
+                    <img class="menu-icon" src="img/add.png">
+                    <p class="icon-text">More</p>
+                </div>
             </nav>
         </div>
         <div id="map-container">
-            <img id="map" src="Map.png">
+            <img id="map" src="img/map-bcgrd.png">
         </div>
         <div id="dragdiv">
             <div id="dragdivPull">
                 <div id="grabber"></div>
                 <h1>Discover</h1>
             </div>
-            <div id="NearYou">
-                <h2>Areas Near You</h2>
+            <div class="section">
+                <div class="sect-head">
+                    <h2>Areas Near You</h2>
+                    <a class="see-all" href="#">See all</a>
+                </div>
                 <div class="content-list">
                     <div class="card">
                         <div class="card-info">
                             <div class="card-text">
-                                <h4>Distillery</h4>
-                                <p class="description">A place brimming with creativity and creative people, that can inspire dreams</p>
-                                <a href="#" class="more-link">Learn more</a>
+                                <h4>Taste & Explore</h4>
+                                <p class="description">A bike and walk scavenger hunt</p>
+                                <p class="date">Aug 28, 11 AM - 5 PM</p>
+                                <p class="location">Area: Bloor West Village</p>
+                                <a class="more-link" href="#">Learn more</a>
                             </div>
-                            <img class="card-img" src="distillery.jpg">
+                            <img src="img/distillery.jpg" alt="Taste & Explore" class="card-img">
                         </div>
                     </div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="card-text">
+                                <h4>Taste & Explore</h4>
+                                <p class="description">A bike and walk scavenger hunt</p>
+                                <p class="date">Aug 28, 11 AM - 5 PM</p>
+                                <p class="location">Area: Bloor West Village</p>
+                                <a class="more-link" href="#">Learn more</a>
+                            </div>
+                            <img src="img/distillery.jpg" alt="Taste & Explore" class="card-img">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="card-text">
+                                <h4>Taste & Explore</h4>
+                                <p class="description">A bike and walk scavenger hunt</p>
+                                <p class="date">Aug 28, 11 AM - 5 PM</p>
+                                <p class="location">Area: Bloor West Village</p>
+                                <a class="more-link" href="#">Learn more</a>
+                            </div>
+                            <img src="img/distillery.jpg" alt="Taste & Explore" class="card-img">
+                        </div>
+                    </div>        
                 </div>
             </div>
-            <div class="container">
-       
-                <section class="trending">
-                    <div class="section-header">
-                        <h2>Trending</h2>
-                        <a href="#">See all</a>
+            <div class="section">
+                <div class="sect-head">
+                    <h2>Trending</h2>
+                    <a class="see-all" href="#">See all</a>
+                </div>
+                <div class="carousel">
+                    <div class="carousel-track-container">
+                        <ul class="carousel-track">
+                            <li class="carousel-slide">
+                                <img src="img/distillery.jpg" alt="Summer music" class="card-img">
+                                <div class="heart"></div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="img/distillery.jpg" alt="Shore" class="card-img">
+                                 <div class="heart"></div>
+                            </li>
+                            <li class="carousel-slide">
+                                <img src="img/distillery.jpg" alt="Under" class="card-img">
+                                <div class="heart"></div>
+                            </li>
+                        </ul>
                     </div>
-                    <div class="carousel">
-                        <div class="carousel-track-container">
-                            <ul class="carousel-track">
-                                <li class="carousel-slide">
-                                    <img src="distillery.jpg" alt="Summer music" class="card-img">
-                                    <div class="heart"></div>
-                                </li>
-                                <li class="carousel-slide">
-                                    <img src="distillery.jpg" alt="Shore" class="card-img">
-                                    <div class="heart"></div>
-                                </li>
-                                <li class="carousel-slide">
-                                    <img src="distillery.jpg" alt="Under" class="card-img">
-                                    <div class="heart"></div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="carousel-nav">
-                            <button class="carousel-dot current-slide"></button>
-                            <button class="carousel-dot"></button>
-                            <button class="carousel-dot"></button>
-                        </div>
+                    <div class="carousel-nav">
+                        <button class="carousel-dot current-slide"></button>
+                        <button class="carousel-dot"></button>
+                        <button class="carousel-dot"></button>
                     </div>
-                </section>
+                </div>
+            </div>
         
                 <!-- Favourites Section -->
-                <section class="favourites">
-                    <div class="section-header">
-                        <h2>Favourites</h2>
-                        <a href="#">See all</a>
-                    </div>
-                    <div class="favourite-item">
-                        <img src="distillery.jpg" alt="Taste & Explore" class="card-img">
-                        <div class="content">
-                            <h3>Taste & Explore</h3>
-                            <p>A bike and walk scavenger hunt</p>
-                            <p>Aug 28, 11 AM - 5 PM</p>
-                            <p>Area: Bloor West Village</p>
-                            <a href="#">Learn more</a>
+            <div id="favourites" class="section">
+                <div class="sect-head">
+                    <h2>Favourites</h2>
+                    <a class="see-all" href="#">See all</a>
+                </div>
+                <div class="content-list">
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="card-text">
+                                <h4>Taste & Explore</h4>
+                                <p class="description">A bike and walk scavenger hunt</p>
+                                <p class="date">Aug 28, 11 AM - 5 PM</p>
+                                <p class="location">Area: Bloor West Village</p>
+                                <a class="more-link" href="#">Learn more</a>
+                            </div>
+                            <img src="img/distillery.jpg" alt="Taste & Explore" class="card-img">
                         </div>
-                        <div class="heart"></div>
                     </div>
-                    <div class="favourite-item">
-                        <img src="distillery.jpg" alt="Taste & Explore" class="card-img">
-                        <div class="content">
-                            <h3>Taste & Explore</h3>
-                            <p>A bike and walk scavenger hunt</p>
-                            <p>Aug 28, 11 AM - 5 PM</p>
-                            <p>Area: Bloor West Village</p>
-                            <a href="#">Learn more</a>
+                    <div class="heart"></div>
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="card-text">
+                                <h4>Taste & Explore</h4>
+                                <p class="description">A bike and walk scavenger hunt</p>
+                                <p class="date">Aug 28, 11 AM - 5 PM</p>
+                                <p class="location">Area: Bloor West Village</p>
+                                <a class="more-link" href="#">Learn more</a>
+                            </div>
+                            <img src="img/distillery.jpg" alt="Taste & Explore" class="card-img">
                         </div>
-                        <div class="heart"></div>
                     </div>
-                    <div class="favourite-item">
-                        <img src="distillery.jpg" alt="Taste & Explore" class="card-img">
-                        <div class="content">
-                            <h3>Taste & Explore</h3>
-                            <p>A bike and walk scavenger hunt</p>
-                            <p>Aug 28, 11 AM - 5 PM</p>
-                            <p>Area: Bloor West Village</p>
-                            <a href="#">Learn more</a>
+                    <div class="heart"></div>
+                    <div class="card">
+                        <div class="card-info">
+                            <div class="card-text">
+                                <h4>Taste & Explore</h4>
+                                <p class="description">A bike and walk scavenger hunt</p>
+                                <p class="date">Aug 28, 11 AM - 5 PM</p>
+                                <p class="location">Area: Bloor West Village</p>
+                                <a class="more-link" href="#">Learn more</a>
+                            </div>
+                            <img src="img/distillery.jpg" alt="Taste & Explore" class="card-img">
                         </div>
-                        <div class="heart"></div>
                     </div>
-                </section>
-            </div>
+                    <div class="heart"></div>
+                </div>
+            </div>   
         </div>
     </body>
 </html>
