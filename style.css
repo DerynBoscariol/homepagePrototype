@@ -6,6 +6,10 @@ body {
    height: fit-content;
 }
 
+a {
+    text-decoration: none;
+}
+
 #menu {
     height:85px;
     width:100%;
